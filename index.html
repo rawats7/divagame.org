@@ -661,6 +661,8 @@ src="https://www.facebook.com/tr?id=1526637895924966&ev=PageView&noscript=1"
         setTimeout(()=>{ document.querySelectorAll('.hero .reveal,.hero .reveal-delay-1,.hero .reveal-delay-2,.hero .reveal-delay-3,.hero .reveal-delay-4,.hero .reveal-delay-5,.hero .reveal-delay-6').forEach(el=>el.classList.add('revealed')); },150);
     })();
 
+     document.querySelectorAll('a[href^="#"]').forEach(a=>{ a.addEventListener('click', function(e){ const t=document.querySelector(this.getAttribute('href')); if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); } }); });
+
 
 </script>
 </body>
