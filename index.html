@@ -9,8 +9,7 @@
     <meta property="og:url" content="https://rawats7.github.io/divagame.org/" />
     <meta property="og:type" content="website" />
     <meta name="description" content="Join the most advanced Telegram channel for crypto signals, AI alerts, and a futuristic community." />
-    <title>DIVA GAMER – #1 Telegram Hub</title>
-    <!-- Meta Pixel Code -->
+    <title>DIVA GAMER – #1 Telegram Hub</title>   
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -580,7 +579,7 @@ src="https://www.facebook.com/tr?id=1526637895924966&ev=PageView&noscript=1"
     <footer class="footer">
         <div class="socials"><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-telegram"></i></a><a href="#"><i class="fa-brands fa-discord"></i></a></div>
         <div class="links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Contact</a></div>
-        <div class="copy">&copy; 2026 Nexus · Built with <i class="fa-solid fa-heart" style="color:#ff5e00;"></i> for the future</div>
+        <div class="copy">&copy; 2026 diva gamer · Built with <i class="fa-solid fa-heart" style="color:#ff5e00;"></i> for the future</div>
     </footer>
 </div>
 
@@ -660,9 +659,10 @@ src="https://www.facebook.com/tr?id=1526637895924966&ev=PageView&noscript=1"
         setTimeout(()=>{ document.querySelectorAll('.hero .reveal,.hero .reveal-delay-1,.hero .reveal-delay-2,.hero .reveal-delay-3,.hero .reveal-delay-4,.hero .reveal-delay-5,.hero .reveal-delay-6').forEach(el=>el.classList.add('revealed')); },150);
     })();
 
-     document.querySelectorAll('a[href^="#"]').forEach(a=>{ a.addEventListener('click', function(e){ const t=document.querySelector(this.getAttribute('href')); if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); } }); });
-
-
+    function track(s) { if(typeof fbq!=='undefined') fbq('track','Subscribe',{content_name:'Telegram Join',source:s}); }
+    document.getElementById('joinHeroBtn').addEventListener('click', ()=>trackJoin('hero'));
+    document.getElementById('floatingCta').addEventListener('click', ()=>trackJoin('floating'));
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{ a.addEventListener('click', function(e){ const t=document.querySelector(this.getAttribute('href')); if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); } }); });
 </script>
 </body>
 </html>
